@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/cityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="enter city"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/zipEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="or enter zipcode"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/getWeatherButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Weather" />
+
+        <TextView
+            android:id="@+id/tempTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E91E63" />
+
+        <TextView
+            android:id="@+id/jsonFeedTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E91E63" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
